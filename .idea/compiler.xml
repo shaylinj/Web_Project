@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PhotoApplicationeLogic" />
+        <module name="PhotoApplicationAWS" />
+        <module name="PhotoApplicationTranslator" />
+        <module name="PhotoApplicationRepo" />
+      </profile>
+      <profile name="Annotation profile for PhotoApplication" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../ACCOUNT_SYSTEM/org/springframework/boot/spring-boot-configuration-processor/2.0.4.RELEASE/spring-boot-configuration-processor-2.0.4.RELEASE.jar" />
+        </processorPath>
+        <module name="PhotoApplicationWebSpringBoot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PhotoApplicationDomain" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PhotoApplicationAWS" options="-parameters" />
+      <module name="PhotoApplicationDomain" options="-parameters" />
+      <module name="PhotoApplicationRepo" options="-parameters" />
+      <module name="PhotoApplicationTranslator" options="-parameters" />
+      <module name="PhotoApplicationWebSpringBoot" options="-parameters" />
+      <module name="PhotoApplicationeLogic" options="-parameters" />
+    </option>
+  </component>
+</project>
